@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Josefin+Sans:wght@700&family=Oswald:wght@500&family=Zen+Kaku+Gothic+New:wght@700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
+  background: #f5f5f0;
+  color: #333;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  background: #f5f5f0;
+}
+
+/* Section containers */
+#header, #mv, #about, #concept, #voice, #notice, #contact, #footer {
+  width: 100%;
+}
+
+/* Header Styles */
+.header {
+  background: #6C4C35;
+  width: 100%;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  min-height: 80px;
+}
+
+.header__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.header__top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.header__external-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.header__external-link:hover {
+  opacity: 0.8;
+}
+
+.header__external-text {
+  color: #FFFFFF;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.header__external-icon {
+  width: 15px;
+  height: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header__logo-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.header__nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.header__nav-link {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.4;
+  transition: color 0.2s;
+  white-space: nowrap;
+}
+
+.header__nav-link:hover {
+  color: #FF7300;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.header__btn {
+  background: #FFFFFF;
+  color: #333333;
+  border: 1px solid #333333;
+  padding: 10px 20px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+  border-radius: 4px;
+}
+
+.header__btn:hover {
+  background: #FF7300;
+  color: #FFFFFF;
+  border-color: #FF7300;
+}
+
+@media (max-width: 1200px) {
+  .header__main {
+    gap: 200px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header__nav {
+    gap: 20px;
+  }
+  
+  .header__nav-links {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .header {
+    padding: 12px 20px;
+  }
+  
+  .header__container {
+    gap: 8px;
+  }
+  
+  .header__main {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .header__logo-section {
+    gap: 10px;
+  }
+  
+  .header__logo-img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .header__nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .header__nav-links {
+    gap: 15px;
+  }
+  
+  .header__nav-link {
+    font-size: 12px;
+  }
+  
+  .header__buttons {
+    gap: 10px;
+  }
+  
+  .header__btn {
+    font-size: 11px;
+    padding: 8px 15px;
+  }
+  
+  .header__external-text {
+    font-size: 11px;
+  }
+}
+
+/* Hero (MV) Section Styles */
+.mv {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  overflow: hidden;
+}
+.mv__bg {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 900px) {
+  .mv {
+    height: 340px;
+  }
+}
