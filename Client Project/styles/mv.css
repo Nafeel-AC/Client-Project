@@ -9,6 +9,9 @@
   position: absolute;
   top: 0; left: 0; width: 100%; height: 100%;
   background: #d9d9d9;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   /* Placeholder for background image */
   z-index: 1;
 }
@@ -50,4 +53,11 @@
   display: inline-block;
   padding: 8px 24px;
   border-radius: 8px;
+}
+
+/* Mobile styles */
+@media (max-width: 900px) {
+  .mv__bg {
+    background-image: url('../assets/Mobile.png') !important;
+  }
 }

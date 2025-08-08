@@ -147,8 +147,9 @@
   }
   
   .concept-highlight__bg {
-    font-size: 160px;
-    left: -20px;
+    font-size: 60px;
+    left: 0;
+    text-align: center;
   }
   
   .concept-highlight__container {
@@ -165,11 +166,13 @@
     width: 100%;
     max-width: 350px;
     height: 260px;
+    order: 2;
   }
   
   .concept-highlight__text {
     width: 100%;
     max-width: 480px;
+    order: 1;
   }
   
   .concept-highlight__header-icon {

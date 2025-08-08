@@ -304,6 +304,7 @@
 @media (max-width: 1200px) {
   .concept__bg {
     font-size: 200px;
+    text-align: left;
   }
   
   .concept__feature {
@@ -345,25 +346,118 @@
     padding: 60px 20px;
   }
   
-  .concept__bg {
-    font-size: 160px;
-    right: -20px;
+  .concept .concept__bg {
+    font-size: 80px !important;
+    left: 0 !important;
+    right: auto !important;
+    text-align: left !important;
   }
   
   .concept__title {
     font-size: 28px;
   }
   
-  .concept__feature-title {
-    font-size: 28px;
+  /* Mobile card layout */
+  .concept__feature {
+    height: auto;
+    padding: 0;
+    margin-bottom: 40px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
   
-  .concept__feature-image {
-    height: 200px;
+  .concept__feature--1,
+  .concept__feature--2,
+  .concept__feature--3 {
+    padding: 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Point number at top of card */
+  .concept__feature-number {
+    position: static !important;
+    justify-content: flex-start;
+    margin: 0 0 20px 0;
+    height: auto;
+    order: 1;
+    align-self: center;
+    width: 100%;
+    max-width: 350px;
+    padding-left: 20px;
+  }
+  
+  .concept__feature--1 .concept__feature-number,
+  .concept__feature--2 .concept__feature-number,
+  .concept__feature--3 .concept__feature-number {
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    justify-content: flex-start;
+    margin: 0 0 20px 0;
+    order: 1;
+    align-self: center;
+    width: 100%;
+    max-width: 350px;
+    padding-left: 20px;
+  }
+  
+  .concept__feature-content {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+    margin: 0 !important;
+    border-radius: 10px !important;
+    max-width: 350px;
+    text-align: left;
+    order: 2;
+  }
+  
+  .concept__feature--1 .concept__feature-content,
+  .concept__feature--2 .concept__feature-content,
+  .concept__feature--3 .concept__feature-content {
+    margin: 0 !important;
+    border-radius: 10px !important;
+    padding: 30px 20px;
+    order: 2;
+  }
+  
+  .concept__number-label {
+    font-size: 16px;
   }
   
   .concept__number {
-    font-size: 80px;
+    font-size: 60px;
+  }
+  
+  /* Title and description */
+  .concept__feature-text {
+    gap: 15px;
+    order: 2;
+  }
+  
+  .concept__feature-title {
+    font-size: 24px;
+    line-height: 1.4;
+    text-align: center;
+  }
+  
+  .concept__feature-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+  }
+  
+  /* Image at bottom */
+  .concept__feature-image {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    order: 4;
+    align-self: center;
   }
   
   .concept__cta-btn {

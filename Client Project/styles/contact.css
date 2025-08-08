@@ -87,3 +87,19 @@
   background: linear-gradient(90deg, #FF7300 0%, #F4B635 100%);
   color: #fff;
 }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact__bg { font-size: 80px; }
+  .contact__content { padding: 80px 20px 40px 20px; }
+  .contact__heading-title { font-size: 20px; }
+  .contact__subtitle { font-size: 28px; }
+  .contact__desc { font-size: 16px; }
+  .contact__btns { flex-direction: column; gap: 16px; width: 100%; align-items: center; }
+  .contact__btn { width: 280px; }
+}
+
+@media (max-width: 600px) {
+  .contact__bg { font-size: 60px; }
+  .contact__btn { width: 240px; padding: 14px 24px; font-size: 16px; }
+}

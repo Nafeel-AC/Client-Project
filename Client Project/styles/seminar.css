@@ -188,17 +188,17 @@
 }
 
 .seminar__cta-btn {
-  width: 361px;
-  height: 67px;
-  background: linear-gradient(135deg, #F4B635 0%, #FF7300 100%);
+  width: 280px;
+  height: 50px;
+  background: linear-gradient(90deg, #FF7300 0%, #E55A00 100%);
   border: none;
-  border-radius: 35.5px;
+  border-radius: 25px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
-  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  gap: 12px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
 
@@ -209,9 +209,9 @@
 .seminar__cta-text {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 18px;
   line-height: 1.2em;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   color: white;
 }
 
@@ -255,7 +255,7 @@
   }
   
   .seminar__bg {
-    font-size: 160px;
+    font-size: 80px;
     left: 50%;
     transform: translateX(-50%);
   }

@@ -255,8 +255,9 @@
   }
   
   .about__mission-bg {
-    font-size: 160px;
-    left: -20px;
+    font-size: 80px !important;
+    left: 0;
+    text-align: center;
   }
   
   .about__content {
@@ -293,4 +294,13 @@
     padding: 15px 30px;
     font-size: 16px;
   }
+}
+
+@media (max-width: 600px) {
+  .about__mission-bg { font-size: 60px; left: 0; text-align: center; }
+  .about__subtitle { font-size: 20px; }
+  .about__subdesc { font-size: 18px; }
+  .about__desc { font-size: 14px; padding: 0 8px; }
+  .about__carousel-slide { min-width: 100%; }
+  .about__carousel-img { width: 100%; max-width: 320px; height: 200px; }
 }
